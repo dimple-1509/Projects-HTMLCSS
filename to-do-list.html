@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To -Do-List</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background-color: bisque;
+        }
+
+        .box{
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            width: 30vw;
+            height: auto;
+            border: 4px solid blue;
+            border-radius: 15px;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .head{
+            display: flex;
+            justify-content: center;
+        }
+
+        .text-box{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        button{
+            padding: 5px 10px;
+            background-color: blue;
+            border: none;
+            border-radius: 10px;
+            color: black;       
+        }
+
+        .text{
+            height: 30px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .para{
+            display: flex;
+            justify-content: center;
+        }
+
+        .para p {
+            font-size: 24px;
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+
+        .sub-task-box{
+            /* width: 100%; */
+            height: 45px;
+            border: 2px solid white;
+            border-radius: 10px;
+            display: flex;
+            padding: 5px;
+        }
+
+        .sub-child-1{
+            display: flex;
+            width: 50%;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sub-child{
+            display: flex;
+            justify-content: flex-end;
+            width: 50%;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sub-child p{
+            color: red;
+            padding-right: 10px;
+            padding-top: 20px;
+        }
+
+        .box4{
+            border: 2px solid blue;
+        }
+
+        .footer-Note{
+           display: flex;
+           justify-content: center;
+        }
+    </style>
+</head>
+<body>
+      <div class="box">
+        <div class="head">
+            <h1>TO DO LIST</h1>
+        </div>
+        <div class="text-box">
+            <input type="text" id="t1" class="text">
+             <button>Add</button>
+        </div>
+
+        <div class="para">
+            <p>Take list</p>
+        </div>
+         
+        <div class="sub-task-box">
+            <div class="sub-child-1">
+                <input type="checkbox" id="i1">
+                <label for="i1">wash dishes</label>
+            </div>
+            <div class="sub-child">
+                <p>Delete</p>
+                <p>Edit</p>
+            </div>
+        </div>
+
+        <div class="sub-task-box">
+            <div class="sub-child-1">
+                <input type="checkbox" id="i2">
+                <label for="i2">edit resume</label>
+            </div>
+            <div class="sub-child">
+                 <p>Delete</p>
+                <p>Edit</p>
+            </div>
+
+        </div>
+        <div class="sub-task-box">
+            <div class="sub-child-1">
+                <input type="checkbox" id="i3">
+                <label for="i3">finish codex course</label>
+            </div>
+            <div class="sub-child">
+                 <p>Delete</p>
+                <p>Edit</p>
+            </div>
+        </div>
+
+        <div class="box4"></div>
+
+        <div class="footer-Note">
+            <p>Completed : 1 | Uncompleted : 2</p>
+        </div>
+      </div>
+
+      <!-- <div>
+        <img src="finished-todo-list.png" alt="">
+      </div> -->
+</body>
+</html>
