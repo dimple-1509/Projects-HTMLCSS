@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swipe Animation</title>
+    <style>
+        body{
+            display: flex;
+            background-color: black;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .box{
+            width: 244px;
+            height: 344px;
+            background-color: rgb(227, 172, 231);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+
+        .animate-0{
+            animation: swipe-scale-0 2s linear 1s 1 alternate backwards, swipe-X-0 2s linear 2s 1 alternate forwards;
+        }
+
+        @keyframes swipe-scale-0{
+           0%{
+            transform: scale(1);
+           }
+
+           50%{
+            transform: scale(1.4);
+           }
+
+           70%{
+            transform: scale(1.2);
+           }
+
+           100%{
+            transform: scale(1);
+           }
+        }
+
+        @keyframes swipe-X-0{
+            from{
+
+            }
+
+            to{
+                transform: translateX(200px);
+
+            }
+        }
+
+        .animate-1{
+            animation: swipe-scale-0 2s linear 2.5s 1 alternate backwards, swipe-X-0 2s linear 3s 1 alternate forwards;
+        }
+
+          
+        
+
+        .animate-2{
+            animation: swipe-scale-0 2s linear 3.5s 1 alternate backwards, swipe-X-0 2s linear 4s 1 alternate forwards;
+        }
+
+         
+    </style>
+</head>
+<body>
+    <div class="box animate-2">2</div>
+    <div class="box animate-1">1</div>
+    <div class="box animate-0">0</div>
+</body>
+</html>
