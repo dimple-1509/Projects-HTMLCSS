@@ -36,14 +36,67 @@ ul li:hover {
     text-decoration: underline;
     text-decoration-color: white;
     opacity: 70%;
+    cursor: pointer;
 }
 
 .main-content {
     width: 70%;
-    height: 70vh;
+    height: auto;
     margin: 30px auto;
-    border: 2px solid white;
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+    font-family: sans-serif;
 }
+
+.text{
+    display: flex;
+     flex-direction: column;
+     gap: 15px;
+     justify-content: center;
+    
+}
+
+.text h1{
+    font-size: 40px;
+}
+
+.para-text{
+    width: 500px;
+    height: 100px;
+    text-align: justify;
+    font-family: monospace;
+}
+
+.image{
+    width: 300px;
+    height: 300px;
+    border-radius: 60%;
+    border: 2px dotted white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    text-align: center;
+  width: 244px;
+  height: 44px;
+  background-color: green;
+  border: none;
+  border-radius: 10px;
+  font-family: monospace;
+}
+
+button:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+    background-color: black;
+    border: 1px solid green;
+    cursor: pointer;
+    /* opacity: 70%; */
+}
+
 
 footer {
 
